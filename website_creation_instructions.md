@@ -38,9 +38,11 @@ Under this h2 heading, create an unordered list with the pricing information, or
 Create an ordered list of all other products by this particular supplier (see the spreadsheet to look up the supplier & then find their other products). If another student created a page for that product, create a link to that product in the list.  
 
 ## Recommended pairings section 
-Once the basic pages are created, we’re going to create a new h2 sub-section for each product called “Pairings” that will have links to other Northwind products that would go well with the particular product, as well as some accompanying ad copy. For example, your pairings copy might be (wrapped in a <p></p> block: 
+Once the basic pages are created, we’re going to create a new h2 sub-section for each product called “Pairings” that will have links to other Northwind products that would go well with the particular product, as well as some accompanying ad copy. For example, your pairings copy might be (wrapped in a paragraph block): 
 
+```
 “Enjoy your delicious Wimmers gute Semmelknödel (a kind of bread-based German dumpling) with a class of delicious Rhönbräu Klosterbier (a German “cloister beer” i.e., one traditionally brewed by monks). For a special treat, try smothering your Wimmers gute Semmelknödel in Original Frankfurter grüne Soße” 
+```
 
 Recall how we link pages:
 <a href="URL to other product page">Outback Lager</a>
