@@ -1,0 +1,14 @@
+#!/usr/bin/env wolframscript
+
+csvfile = $ScriptCommandLine[[2]]
+outfile = $ScriptCommandLine[[3]]
+
+Print[csvfile]
+data = Import[csvfile];
+
+g = Graph[Map[#[[1]] -> #[[2]] &, data], VertexLabels -> "Name"]
+prettyG = Graph[g, VertexLabels -> "Name",
+   VertexSize -> 
+    MapThread[#1 -> 6*#2 &, {VertexList[g], PageRankCentrality[g]}]];
+Export[outfile, Show[prettyG, ImageSize -> 1000]]
+
